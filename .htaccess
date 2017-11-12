@@ -1,6 +1,10 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  
+
+  # http:// -> https://
+  RewriteCond %{HTTPS} off
+  RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
   # www.bitbear.org -> bitbear.org
   RewriteCond %{HTTP_HOST}  ^www.bitbear.org$      [NC]
   RewriteRule ^(.*)$        http://bitbear.org/$1  [R=301,L]
