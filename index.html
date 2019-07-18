@@ -61,16 +61,23 @@
         text-decoration: none;
       }
 
-      @media screen and (max-device-width: 480px) {
+      @media screen and (max-width: 480px) {
         html {
           font-size: 350%;
         }
       }
 
+      iframe#soundcloud {
+        border: none;
+        width: 100%;
+        margin-bottom: 1em;
+        overflow: hidden;
+      }
+
     </style>
   </head>
   <body>
-    <script type="text/javascript">
+    <script>
 
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-1567019-13']);
@@ -92,7 +99,12 @@
 
     <article>
       <h2>Listen</h2>
-      <p>You can listen to my music online. You can find me here:</p>
+      <p>You can listen to my music online. Here's my latest track <a href="https://soundcloud.com/bitbear/that-flateby-feeling">That Flateby Feeling</a>:</p>
+      <iframe id="soundcloud"
+              height="300"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/652666730&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      <p>I can also be found on the following music platforms:</p>
       <ul>
         <li><a rel="me" href="http://dj.beatport.com/bitbear">Beatport</a></li>
         <li><a rel="me" href="https://soundcloud.com/bitbear">SoundCloud</a></li>
