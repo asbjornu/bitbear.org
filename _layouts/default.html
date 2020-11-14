@@ -10,46 +10,7 @@
     <link rel="shortcut icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
     <link rel="shortcut icon" type="image/svg" href="{{ '/assets/images/logo.svg' | relative_url }}">
     <link rel="icon" type="image/svg" href="{{ '/assets/images/logo.svg' | relative_url }}">
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "MusicGroup",
-        "@id": "https://bitbear.org",
-        "name": "Bitbear",
-        "description": "Bitbear is Asbjørn Ulsberg's tone-hammering, beat-juggling and demoscene-participating alter ego.",
-          "logo": {
-              "@type": "ImageObject",
-              "url": "https://bitbear.org/images/logo.svg"
-          },
-          "url": "https://bitbear.org",
-          "genre": [
-              "Electronic",
-              "Synthwave"
-          ],
-          "sameAs": [
-              "https://www.facebook.com/bitbearmusic",
-              "https://twitter.com/bitbearmusic",
-              "https://www.instagram.com/bitbearmusic",
-              "https://www.youtube.com/channel/UC9wb6OrUrugGg6-q9805RDQ",
-              "https://soundcloud.com/bitbear",
-              "http://dj.beatport.com/bitbear",
-              "https://www.mixcloud.com/bitbearmusic/",
-              "https://bitbearmusic.bandcamp.com"
-          ],
-          "member": [
-              {
-                  "@type": "OrganizationRole",
-                  "member": {
-                      "@type": "Person",
-                      "name": "Artist",
-                      "givenName": "Asbjørn Ulsberg",
-                      "sameAs": "https://asbjor.nu/"
-                  },
-                  "roleName": [ "producer" ]
-              }
-          ]
-      }
-    </script>
+    <script src="{{ '/assets/scripts/context.js' | relative_url }}"></script>
     <style>
       * {
         margin: 0;
