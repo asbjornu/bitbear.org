@@ -22,7 +22,8 @@
             "https://soundcloud.com/bitbear",
             "http://dj.beatport.com/bitbear",
             "https://www.mixcloud.com/bitbearmusic/",
-            "https://bitbearmusic.bandcamp.com"
+            "https://bitbearmusic.bandcamp.com",
+            "https://urort.p3.no/artist/Bitbear"
         ],
         "member": [
             {
