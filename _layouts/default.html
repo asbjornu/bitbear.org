@@ -2,8 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bitbear</title>
-    <link rel="shortcut icon" type="image/svg" href="images/logo.svg">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="{%if page.description%}{{page.description}}{%else%}{{site.data.settings.description}}{%endif%}">
+    <meta name="author" content="{{ site.author }}">
+    <link rel="stylesheet" href="{{ '/assets/scss/bitbear.css' | relative_url }}">
+    <link rel="shortcut icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
+    <link rel="shortcut icon" type="image/svg" href="{{ '/assets/images/logo.svg' | relative_url }}">
+    <link rel="icon" type="image/svg" href="{{ '/assets/images/logo.svg' | relative_url }}">
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -132,6 +138,8 @@
 
     </script>
     <h1><img src="images/logo.svg" width="672" alt="Bitbear"></h1>
+
+    {{ content }}
 
     <article>
       <h2>Wut?</h2>
