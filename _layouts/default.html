@@ -4,87 +4,26 @@
     <meta charset="utf-8">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="{%if page.description%}{{page.description}}{%else%}{{site.data.settings.description}}{%endif%}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.data.settings.description }}{% endif %}">
     <meta name="author" content="{{ site.author }}">
     <link rel="stylesheet" href="{{ '/assets/scss/bitbear.css' | relative_url }}">
     <link rel="shortcut icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
     <link rel="shortcut icon" type="image/svg" href="{{ '/assets/images/logo.svg' | relative_url }}">
     <link rel="icon" type="image/svg" href="{{ '/assets/images/logo.svg' | relative_url }}">
     <script src="{{ '/assets/scripts/context.js' | relative_url }}"></script>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-
-      html {
-        background: #19265d url('images/bg.jpg') top left repeat-x;
-        background: linear-gradient(180deg, #00c0ff 0%, #19265d 100%);
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 200%;
-        color: #fee;
-      }
-
-      body {
-        max-width: 960px;
-        min-width: 313px;
-        margin: 0 auto;
-        padding: 2em;
-      }
-
-      h1 {
-        text-align: center;
-        margin-bottom: 1em;
-      }
-
-      article {
-        margin-bottom: 1em;
-        padding-bottom: 1em;
-      }
-
-      article:after {
-        display: block;
-        text-align: center;
-        content: '~';
-      }
-
-      article:last-child:after {
-        content: none;
-      }
-
-      p {
-        margin-bottom: 1em;
-      }
-
-      ul {
-        margin: 0 0 1em 1em;
-      }
-
-
-      a {
-        color: #fee;
-      }
-
-      a:hover {
-        text-decoration: none;
-      }
-
-      @media screen and (max-width: 480px) {
-        html {
-          font-size: 350%;
-        }
-      }
-
-      iframe#soundcloud {
-        border: none;
-        width: 100%;
-        margin-bottom: 1em;
-        overflow: hidden;
-      }
-
-    </style>
   </head>
   <body>
+    <header>
+      <img src="{{ '/assets/images/ears.png' | relative_url }}" class="ears">
+      <nav>
+        <h1><a href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/bitbear.png' | relative_url }}" alt="Bitbear" width="200"></a></h1>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Music</a></li>
+        </ul>
+      </nav>
+    </header>
+
     {{ content }}
 
     <article>
