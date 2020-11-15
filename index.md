@@ -2,4 +2,6 @@
 title: Bitbear
 ---
 
-# Bitbear
+# Hey
+
+Lorem ipsum dolor sit amet
