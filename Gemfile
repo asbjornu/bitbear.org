@@ -21,6 +21,7 @@ end
 
 group :test do
   gem 'codecov', require: false
+  gem 'html-proofer', require: false
   gem 'rake', require: false
   gem 'rspec', require: false
   gem 'rspec-html-matchers', require: false
