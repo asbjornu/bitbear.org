@@ -15,11 +15,13 @@ end
 group :development do
   gem 'rubocop', require: false
   gem 'rubocop-performance', require: false
+  gem 'rubocop-rake', require: false
   gem 'rubocop-rspec', require: false
 end
 
 group :test do
   gem 'codecov', require: false
-  gem 'rspec'
-  gem 'rspec-html-matchers'
+  gem 'rake', require: false
+  gem 'rspec', require: false
+  gem 'rspec-html-matchers', require: false
 end
