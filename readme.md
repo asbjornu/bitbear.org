@@ -1,6 +1,7 @@
 # ![Bitbear][banner]
 
 [![build][build-badge]][build-link]
+[![codecov][codecov-badge]][codecov]
 [![License][license-badge]][license]
 [![Dependabot Status][dependabot-badge]][dependabot]
 [![Contributor Covenant][coc-badge]][coc]
@@ -13,6 +14,8 @@ This repository contains the source of the stuff published to [Bitbear.org].
 [build-link]: https://github.com/asbjornu/bitbear.org/actions/workflows/build.yml
 [coc-badge]: https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg
 [coc]: ./CODE_OF_CONDUCT.md
+[codecov-badge]: https://codecov.io/gh/asbjornu/bitbear.org/branch/main/graph/badge.svg
+[codecov]: https://codecov.io/gh/asbjornu/bitbear.org
 [dependabot-badge]: https://api.dependabot.com/badges/status?host=github&repo=asbjornu/bitbear.org
 [dependabot]: https://dependabot.com
 [license-badge]: https://img.shields.io/github/license/asbjornu/bitbear.org
