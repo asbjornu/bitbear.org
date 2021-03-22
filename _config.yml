@@ -27,6 +27,7 @@ exclude:
   - .gitignore
   - spec
   - Rakefile
+  - coverage
 
 include:
   - .well-known
