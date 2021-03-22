@@ -1,0 +1,39 @@
+name: build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.7'
+          bundler-cache: true
+
+      - run: gem install bundler
+
+      - run: bundle install
+
+      - name: jekyll build
+        run: bundle exec rake build
+
+      - name: upload site
+        uses: actions/upload-artifact@v2
+        with:
+          name: site
+          path: _site
+
+      - name: rspec
+        run: bundle exec rake spec
+
+      - name: codecov upload
+        run: bundle exec rake codecov:upload || echo 'Codecov upload failed'
+
+      - name: rubocop
+        run: bundle exec rubocop --fail-level warning --display-only-fail-level-offenses
+
+      - name: htmlproofer
+        run: bundle exec htmlproofer _site
