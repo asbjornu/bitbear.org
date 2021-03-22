@@ -23,3 +23,5 @@ exclude:
   - LICENSE.txt
   - readme.md
   - .gitignore
+  - spec
+  - Rakefile
