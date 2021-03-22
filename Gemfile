@@ -11,3 +11,8 @@ end
 group :libs do
   gem 'nokogiri'
 end
+
+group :development do
+  gem 'rubocop', require: false
+  gem 'rubocop-performance', require: false
+end
