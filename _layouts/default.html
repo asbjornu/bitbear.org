@@ -1,11 +1,19 @@
+{%- assign title = page.title | default: site.data.settings.title | strip -%}
+{%- assign description = page.description | default: site.data.settings.description | strip -%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</title>
+    <title>{{ title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.data.settings.description }}{% endif %}">
     <meta name="author" content="{{ site.author }}">
+    <meta property="og:type" value="website">
+    <meta property="og:url" value="https://bitbear.org/">
+    <meta property="og:title" value="{{ title }}">
+    <meta name="title" content="{{ title }}">
+    <meta property="og:description" value="{{ description }}">
+    <meta name="description" content="{{ description }}">
+    <meta property="og:image" value="https://repository-images.githubusercontent.com/89099209/95bd4180-8b68-11eb-9dbf-b449b2505aaf">
     <link rel="stylesheet" href="{{ '/assets/scss/bitbear.css' | relative_url }}">
     <link rel="shortcut icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
     <link rel="shortcut icon" type="image/svg" href="{{ '/assets/images/logo.svg' | relative_url }}">

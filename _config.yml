@@ -12,6 +12,8 @@ compress_html:
 defaults:
   - values:
       layout: default
+      description: |
+        Bitbear.org is the website of electronic music producer Asbjørn Ulsberg
 
 sass:
   sass_dir: assets/scss
