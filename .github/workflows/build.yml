@@ -8,14 +8,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: actions/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7'
+          ruby-version: 2.7
           bundler-cache: true
-
-      - run: gem install bundler
-
-      - run: bundle install
 
       - name: jekyll build
         run: bundle exec rake build
@@ -45,14 +41,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: actions/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7'
+          ruby-version: 2.7
           bundler-cache: true
-
-      - run: gem install bundler
-
-      - run: bundle install
 
       - name: rspec
         run: bundle exec rake spec
