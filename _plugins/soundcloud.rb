@@ -16,8 +16,10 @@ module Jekyll
 
         @tracks.each do |track|
           src = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/#{track[:id]}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-          html << "<h3><a href='#{track[:url]}'>#{track[:name]}</a></h3>"
+          html << "<article itemprop='track' itemscope itemtype='http://schema.org/MusicRecording'>"
+          html << "<h3 itemprop='name'><a itemprop='url' href='#{track[:url]}'>#{track[:name]}</a></h3>"
           html << "<iframe src='#{src}' width='100%' height='100' scrolling='no' frameborder='no'></iframe>"
+          html << '</article>'
         end
 
         html

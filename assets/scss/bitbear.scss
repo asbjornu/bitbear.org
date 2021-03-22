@@ -117,12 +117,9 @@ footer a:hover {
     opacity: 0.8;
 }
 
-main, article {
+main {
     padding: 2rem 10rem;
     max-width: 70rem;
-}
-
-main {
     flex: 1;
     position: relative;
     top: -6rem;
