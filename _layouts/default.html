@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.data.settings.description }}{% endif %}">
+    <meta name="author" content="{{ site.author }}">
+    <link rel="stylesheet" href="{{ '/assets/scss/bitbear.css' | relative_url }}">
+    <link rel="shortcut icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
+    <link rel="shortcut icon" type="image/svg" href="{{ '/assets/images/logo.svg' | relative_url }}">
+    <link rel="icon" type="image/svg" href="{{ '/assets/images/logo.svg' | relative_url }}">
+    <script src="{{ '/assets/scripts/context.js' | relative_url }}"></script>
+  </head>
+  <body>
+    <header>
+      <img src="{{ '/assets/images/ears.png' | relative_url }}" class="ears" alt="Bitbear ears">
+      <nav>
+        <h1><a href="{{ '/' | relative_url }}">Bitbear</a></h1>
+        <ul>
+          <li><a href="/music">Music</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <section class="footer">
+      <footer>
+        <a href="https://creativecommons.org/licenses/by/4.0/" title="Creative Commons Attribution 4.0 International (CC BY 4.0)">
+          Web site and content licensed in <abbr title="Creative Commons">CC</abbr> <abbr title="Attribution">BY</abbr> 4.0
+          <span class="icons">
+            <img src="{{ '/assets/images/cc.svg' | relative_url }}" alt="CC" title="Creative Commons" width="30">
+            <img src="{{ '/assets/images/by.svg' | relative_url }}" alt="BY" title="Attribution" width="30">
+          </span>
+        </a>
+    </footer>
+    </section>
+
+    <script src="{{ '/assets/scripts/ga.js' | relative_url }}"></script>
+  </body>
+</html>

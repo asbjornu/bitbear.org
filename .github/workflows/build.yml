@@ -1,0 +1,79 @@
+name: build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+          bundler-cache: true
+
+      - name: jekyll build
+        run: bundle exec rake build
+
+      - name: upload site
+        uses: actions/upload-artifact@v2
+        with:
+          name: site
+          path: _site
+
+  htmlproofer:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: download site
+        uses: actions/download-artifact@v2
+        with:
+          name: site
+          path: _site
+
+      - name: htmlproofer
+        uses: chabad360/htmlproofer@master
+        with:
+          directory: _site
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+          bundler-cache: true
+
+      - name: rspec
+        run: bundle exec rake spec
+
+      - name: codecov upload
+        run: bundle exec rake codecov:upload || echo 'Codecov upload failed'
+
+      - name: rubocop
+        run: bundle exec rubocop --fail-level warning --display-only-fail-level-offenses
+
+  publish-dry-run:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: download site
+        uses: actions/download-artifact@v2
+        with:
+          name: site
+          path: _site
+
+      - name: download git directory deploy
+        env:
+          VERSION: 1.1.0
+        run: |
+          wget "https://github.com/SwedbankPay/git-directory-deploy/raw/${VERSION}/deploy.sh"
+          chmod +x deploy.sh
+
+      - name: publish
+        env:
+          GIT_DEPLOY_DIR: _site
+        run: ./deploy.sh --verbose --dry-run

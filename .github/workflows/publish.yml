@@ -1,0 +1,30 @@
+name: publish
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+          bundler-cache: true
+
+      - name: jekyll build
+        run: bundle exec rake build
+
+      - name: download git directory deploy
+        env:
+          VERSION: 1.1.0
+        run: |
+          wget "https://github.com/SwedbankPay/git-directory-deploy/raw/${VERSION}/deploy.sh"
+          chmod +x deploy.sh
+
+      - name: publish
+        env:
+          GIT_DEPLOY_DIR: _site
+        run: ./deploy.sh
