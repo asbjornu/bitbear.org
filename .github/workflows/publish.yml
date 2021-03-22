@@ -1,7 +1,6 @@
 name: publish
 
 on:
-  pull_request:
   push:
     branches: [main]
 
@@ -28,4 +27,4 @@ jobs:
       - name: publish
         env:
           GIT_DEPLOY_DIR: _site
-        run: ./deploy.sh --verbose
+        run: ./deploy.sh
