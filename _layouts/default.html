@@ -18,8 +18,7 @@
       <nav>
         <h1><a href="{{ '/' | relative_url }}">Bitbear</a></h1>
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Music</a></li>
+          <li><a href="/music">Music</a></li>
         </ul>
       </nav>
     </header>
@@ -28,13 +27,17 @@
       {{ content }}
     </main>
 
-    <footer>
-      <a href="https://creativecommons.org/licenses/by/4.0/" title="Creative Commons Attribution 4.0 International (CC BY 4.0)">
-        <img src="{{ '/assets/images/cc.svg' | relative_url }}" alt="CC" title="Creative Commons" width="30">
-        <span>Web site and content licensed in <abbr title="Creative Commons">CC</abbr> <abbr title="Attribution">BY</abbr> 4.0</span>
-        <img src="{{ '/assets/images/by.svg' | relative_url }}" alt="BY" title="Attribution" width="30">
-      </a>
+    <section class="footer">
+      <footer>
+        <a href="https://creativecommons.org/licenses/by/4.0/" title="Creative Commons Attribution 4.0 International (CC BY 4.0)">
+          Web site and content licensed in <abbr title="Creative Commons">CC</abbr> <abbr title="Attribution">BY</abbr> 4.0
+          <span class="icons">
+            <img src="{{ '/assets/images/cc.svg' | relative_url }}" alt="CC" title="Creative Commons" width="30">
+            <img src="{{ '/assets/images/by.svg' | relative_url }}" alt="BY" title="Attribution" width="30">
+          </span>
+        </a>
     </footer>
+    </section>
 
     <script src="{{ '/assets/scripts/ga.js' | relative_url }}"></script>
   </body>
