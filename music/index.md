@@ -17,11 +17,11 @@ provided below.
 
 Bitbear can also be found on the following online music platforms:
 
-- [Bandcamp]
-- [Beatport]
-- [Mixcloud]
-- [SoundCloud]
-- [YouTube]
+- [Bandcamp]{:rel="me"}
+- [Beatport]{:rel="me"}
+- [Mixcloud]{:rel="me"}
+- [SoundCloud]{:rel="me"}
+- [YouTube]{:rel="me"}
 
 [bandcamp]: https://bitbearmusic.bandcamp.com
 [beatport]: http://dj.beatport.com/bitbear

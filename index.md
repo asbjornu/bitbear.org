@@ -26,9 +26,9 @@ the new-found alias Bitbear.
 
 You can find and harass me on the following social networks:
 
-- [Facebook]
-- [Twitter]
-- [Instagram]
+- [Facebook]{:rel="me"}
+- [Twitter]{:rel="me"}
+- [Instagram]{:rel="me"}
 
 [asbjornu]: https://asbjor.nu/
 [demoscene]: https://en.wikipedia.org/wiki/Demoscene
