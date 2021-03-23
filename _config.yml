@@ -28,6 +28,3 @@ exclude:
   - spec
   - Rakefile
   - coverage
-
-include:
-  - .well-known
