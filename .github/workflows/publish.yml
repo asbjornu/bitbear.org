@@ -17,6 +17,12 @@ jobs:
       - name: jekyll build
         run: bundle exec rake build
 
+      - name: upload site
+        uses: actions/upload-artifact@v2
+        with:
+          name: site
+          path: _site
+
       - name: download git directory deploy
         env:
           VERSION: 1.1.0
