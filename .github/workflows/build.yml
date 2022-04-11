@@ -27,7 +27,7 @@ jobs:
     needs: build
     steps:
       - name: download site
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: site
           path: _site
@@ -61,7 +61,7 @@ jobs:
     needs: build
     steps:
       - name: download site
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: site
           path: _site
