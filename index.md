@@ -27,7 +27,7 @@ Competition][kg2012] under the new-found alias *Bitbear*.
 
 ## Contact
 
-You can find and harass me on the following social networks:
+You can find and harass me on the following places:
 
 - [Mastodon]{:rel="me"}
 - [Facebook]{:rel="me"}
