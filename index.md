@@ -29,9 +29,11 @@ Competition][kg2012] under the new-found alias *Bitbear*.
 
 You can find and harass me on the following social networks:
 
+- [Mastodon]{:rel="me"}
 - [Facebook]{:rel="me"}
 - [Twitter]{:rel="me"}
 - [Instagram]{:rel="me"}
+- [Homepage]{:rel="me"}
 
 [3rd-floor]: https://soundcloud.com/bitbear/sets/3rd-floor
 [asbjornu]: https://asbjor.nu/
@@ -39,9 +41,11 @@ You can find and harass me on the following social networks:
 [demoscene]: https://en.wikipedia.org/wiki/Demoscene
 [facebook]: https://www.facebook.com/bitbearmusic
 [fast-tracker]: https://en.wikipedia.org/wiki/FastTracker_2
+[homepage]: https://asbjor.nu/
 [impulse-tracker]: https://en.wikipedia.org/wiki/Impulse_Tracker
 [instagram]: https://www.instagram.com/bitbearmusic
 [kg2012]: https://demozoo.org/parties/1458/#competition_5258
+[mastodon]: https://mastodon.social/@bitbear
 [noisetracker]: https://en.wikipedia.org/wiki/NoiseTracker
 [protracker]: https://en.wikipedia.org/wiki/ProTracker
 [scream-tracker]: https://en.wikipedia.org/wiki/Scream_Tracker
