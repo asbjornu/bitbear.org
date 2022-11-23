@@ -45,7 +45,7 @@ You can find and harass me on the following places:
 [impulse-tracker]: https://en.wikipedia.org/wiki/Impulse_Tracker
 [instagram]: https://www.instagram.com/bitbearmusic
 [kg2012]: https://demozoo.org/parties/1458/#competition_5258
-[mastodon]: https://mastodon.social/@bitbear
+[mastodon]: https://icosahedron.website/@bitbear
 [noisetracker]: https://en.wikipedia.org/wiki/NoiseTracker
 [protracker]: https://en.wikipedia.org/wiki/ProTracker
 [scream-tracker]: https://en.wikipedia.org/wiki/Scream_Tracker
