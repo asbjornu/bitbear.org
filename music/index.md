@@ -8,8 +8,8 @@ use it any way you like as long as you provide attribution.
 
 ## Listen
 
-You can listen to my music online. His latest tracks are conveniently provided
-below.
+You can listen to Bitbear's music online. His latest tracks are conveniently
+provided below.
 
 {% soundcloud %}
 
