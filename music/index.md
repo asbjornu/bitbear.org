@@ -24,7 +24,7 @@ Bitbear can also be found on the following online music platforms:
 - [YouTube]{:rel="me"}
 
 [bandcamp]: https://bitbearmusic.bandcamp.com
-[beatport]: http://dj.beatport.com/bitbear
+[beatport]: https://dj.beatport.com/bitbear
 [cc]: https://creativecommons.org/licenses/by/4.0/
 [mixcloud]: https://www.mixcloud.com/bitbearmusic/
 [soundcloud]: https://soundcloud.com/bitbear
