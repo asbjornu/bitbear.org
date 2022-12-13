@@ -2,4 +2,18 @@
 layout: default
 ---
 
+<h2>{{ page.title }}</h2>
+
+{% if page.youtube %}
+  <div id="youtube">
+    <iframe
+      type="text/html"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/{{ page.youtube }}"
+      frameborder="0"
+      allowfullscreen></iframe>
+  </div>
+{% endif %}
+
 {{ content }}

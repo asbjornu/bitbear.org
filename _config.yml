@@ -14,6 +14,10 @@ defaults:
       layout: default
       description: |
         Bitbear.org is the website of electronic music producer Asbjørn Ulsberg
+  - scope:
+      path: music/archive
+    values:
+      layout: post
 
 sass:
   sass_dir: assets/scss
