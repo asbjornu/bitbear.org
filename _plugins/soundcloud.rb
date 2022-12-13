@@ -11,6 +11,11 @@ module Jekyll
     class SoundCloudTag < Liquid::Tag
       def initialize(tag_name, markup, tokens)
         super
+
+        # rubocop:disable Style/ClassVars
+        @@cache ||= Jekyll::Cache.new(self.class.name)
+        # rubocop:enable Style/ClassVars
+
         @tracks = parse_tracks
       end
 
@@ -31,9 +36,24 @@ module Jekyll
 
       private
 
-      def parse_tracks
+      def fetch_tracks
         tracks_uri = URI.join(SOUNDCLOUD_BASE_URL, '/bitbear/tracks')
         tracks_source = tracks_uri.open
+        @@cache['tracks'] = tracks_source
+      rescue OpenURI::HTTPError => e
+        Jekyll.logger.error "Error fetching #{tracks_uri}", e
+
+        return @@cache['tracks'] if @@cache.key?('tracks')
+
+        Jekyll.logger.error 'No cached tracks could be found.', e
+
+        nil
+      end
+
+      def parse_tracks
+        tracks_source = fetch_tracks
+        return [] if tracks_source.nil?
+
         tracks_doc = Nokogiri::HTML(tracks_source)
         tracks_doc.css('section > article > h2 > a:first-of-type').map(&:track)
       end
