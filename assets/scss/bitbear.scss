@@ -27,11 +27,12 @@ a {
 
     &:hover {
         color: $nav-link-hover-color;
+        text-decoration: none;
     }
 }
 
-a, a:hover, a:focus {
-    text-decoration: none;
+a, a:focus {
+    text-decoration: underline;
 }
 
 header nav, main {
