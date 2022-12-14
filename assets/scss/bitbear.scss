@@ -167,6 +167,30 @@ table {
     }
 }
 
+blockquote {
+    border-left: 10px solid #ccc;
+    border-radius: 0 10px 10px 0;
+    background: rgba($bg-color-light, .4);
+    margin: 1.5em 10px;
+    padding: 1em 1.5em;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+    color: rgba(#fff, .4);
+    display: inline-block;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.1em;
+    vertical-align: -0.51em;
+    margin-bottom: -0.51em;
+}
+
+blockquote p {
+    display: inline;
+}
+
 #youtube {
     padding: .5em;
     margin: 0 1em .5em 0;
