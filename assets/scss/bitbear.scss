@@ -152,6 +152,23 @@ main {
     ul {
         margin-left: 1em;
     }
+
+    nav.back {
+        clear: both;
+
+        ul {
+            margin: 1em 0 0 0;
+
+            li {
+                list-style-type: "\2039";
+                margin: 0;
+
+                a {
+                    margin-left: .5em;
+                }
+            }
+        }
+    }
 }
 
 .jumbotron {

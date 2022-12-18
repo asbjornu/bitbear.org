@@ -17,3 +17,24 @@ layout: default
 {% endif %}
 
 {{ content }}
+
+{%- assign url = page.url | remove: '.html' | split: '/' -%}
+{%- assign path = url | pop -%}
+<nav class="back">
+  <ul>
+    {%- if path.size == 1 -%}
+      <li>
+        <a rel="index back" href="/">Home</a>
+      </li>
+    {%- else -%}
+      {%- capture link %}
+        {%- for dir in path offset: 1 -%}
+          {{- dir | append: '/' -}}
+        {%- endfor -%}
+      {%- endcapture -%}
+      <li>
+        <a rel="back" href="/{{ link }}">Back to {{ path | last }}</a>
+      </li>
+    {%- endif -%}
+  </ul>
+</nav>
