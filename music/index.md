@@ -3,8 +3,8 @@ title: Music
 ---
 
 {:.jumbotron}
-My music is licensed under the [CC BY 4.0 license][cc], meaning you can use it
-any way you like as long as you provide attribution.
+Bitbear's music is licensed under the [CC BY 4.0 license][cc], meaning you can
+use it any way you like as long as you provide attribution.
 
 ## Listen
 

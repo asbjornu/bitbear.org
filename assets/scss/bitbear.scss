@@ -97,8 +97,26 @@ header {
                 padding: 1rem 0 1rem 1rem;
                 display: block;
 
+                &:after {
+                    content: "\203a";
+                    display: inline-block;
+                }
+
+                &:last-child:after {
+                    content: "";
+                }
+
                 a {
                     font-weight: 900;
+                }
+
+                &.active a {
+                    color: rgba($nav-link-color, .4);
+                    text-decoration: none;
+                }
+
+                &.active a:hover {
+                    text-decoration: underline;
                 }
             }
         }
