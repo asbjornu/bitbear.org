@@ -13,6 +13,7 @@ Tracker][impulse-tracker].
   <thead>
     <tr>
       <th title="Release date" width="17%" class="r">Released</th>
+      <th>Format</th>
       <th>Title</th>
     </tr>
   </thead>
@@ -20,6 +21,7 @@ Tracker][impulse-tracker].
   {% for child in children %}
     <tr>
       <td class="r">{{ child.created }}</td>
+      <td class="format">{{ child.media.format }}</td>
       <td><a href="{{ child.url }}">{{ child.title }}</a></td>
     </tr>
   {% endfor %}
