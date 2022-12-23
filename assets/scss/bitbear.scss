@@ -31,11 +31,13 @@ a {
     }
 }
 
-a, a:focus {
+a,
+a:focus {
     text-decoration: underline;
 }
 
-header nav, main {
+header nav,
+main {
     position: relative;
     padding: 2rem 10rem;
     max-width: 1380px;
@@ -49,7 +51,7 @@ header {
     overflow: hidden;
     min-height: 160px;
 
-    > .ears {
+    >.ears {
         position: absolute;
         left: 50%;
         top: 2rem;
@@ -137,7 +139,12 @@ main {
     padding: 2rem 10rem;
     margin: 0 auto;
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-weight: 500;
         margin: 2rem 0 .5rem 0;
         color: $nav-link-color;
@@ -169,70 +176,108 @@ main {
             }
         }
     }
-}
 
-.jumbotron {
-    background-color: rgba($bg-color-light, .4);
-    border-radius: 1rem;
-    padding: 5rem;
-    margin: 3rem 0;
-    font-size: 3rem;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-
-    th, td {
-      padding: 12px 15px;
-      text-align: left;
-      border-bottom: 1px solid $bg-color-light;
+    .jumbotron {
+        background-color: rgba($bg-color-light, .4);
+        border-radius: 1rem;
+        padding: 5rem;
+        margin: 3rem 0;
+        font-size: 3rem;
     }
 
-    th:first-child, td:first-child {
-      padding-left: 0;
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th,
+        td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid $bg-color-light;
+        }
+
+        th:first-child,
+        td:first-child {
+            padding-left: 0;
+        }
+
+        th:last-child,
+        td:last-child {
+            padding-right: 0;
+        }
+
+        .r {
+            text-align: right;
+        }
     }
 
-    th:last-child, td:last-child{
-      padding-right: 0;
+    .media {
+        display: grid;
+        margin-bottom: 1em;
+        grid-template-columns: 1fr  1fr;
+
+        #youtube {
+            padding: .5em;
+            margin: 0 0 .5em 1em;
+            border: 1px solid $bg-color-light;
+            border-radius: 10px;
+        }
+
+        aside {
+            table th {
+                width: 5em;
+                text-align: right;
+                padding-right: 0;
+
+                &:after {
+                    content: ":";
+                }
+            }
+
+            .download {
+                background-color: rgba($bg-color-light, .6);
+                box-shadow: inset 2px 2px 0 2px rgba(#fff, 0.02);
+                border: 1px solid $bg-color-light;
+                border-radius: 10px;
+                display: block;
+                margin: 1em;
+                padding: 1em;
+                text-align: center;
+                text-decoration: none;
+            }
+
+            .download:hover {
+                background-color: rgba($bg-color-light, .4);
+                box-shadow: inset 0px 5px 10px 0px rgba(#000, 0.5);
+            }
+        }
     }
 
-    .r {
-        text-align: right;
+    blockquote {
+        border-left: 10px solid #ccc;
+        border-radius: 0 10px 10px 0;
+        background: rgba($bg-color-light, .4);
+        margin: 1.5em 10px;
+        padding: 1em 1.5em;
+        quotes: "\201C""\201D""\2018""\2019";
+    }
+
+    blockquote:before {
+        color: rgba(#fff, .4);
+        display: inline-block;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.1em;
+        vertical-align: -0.51em;
+        margin-bottom: -0.51em;
+    }
+
+    blockquote p {
+        display: inline;
     }
 }
 
-blockquote {
-    border-left: 10px solid #ccc;
-    border-radius: 0 10px 10px 0;
-    background: rgba($bg-color-light, .4);
-    margin: 1.5em 10px;
-    padding: 1em 1.5em;
-    quotes: "\201C""\201D""\2018""\2019";
-}
-
-blockquote:before {
-    color: rgba(#fff, .4);
-    display: inline-block;
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.1em;
-    vertical-align: -0.51em;
-    margin-bottom: -0.51em;
-}
-
-blockquote p {
-    display: inline;
-}
-
-#youtube {
-    padding: .5em;
-    margin: 0 1em .5em 0;
-    float: left;
-    border: 1px solid $bg-color-light;
-    border-radius: 10px;
-}
 
 footer {
     position: relative;

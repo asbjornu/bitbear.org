@@ -1,7 +1,13 @@
 ---
 title: The Floot Ride
 created: 1995-12-14
-youtube: WfWNZNDsp_w
+media:
+  youtube: WfWNZNDsp_w
+  filesize: 50288
+  channels: 4
+  format: MOD
+  length: '1:21'
+  amp: 159591
 ---
 
 "The Floote Ride" was the fourth tracker module I produced, and the first one I

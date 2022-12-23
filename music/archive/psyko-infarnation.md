@@ -1,7 +1,13 @@
 ---
 title: Psyko Infarnation
 created: 1995-12-10
-youtube: YDvSWJMCyhM
+media:
+  youtube: YDvSWJMCyhM
+  filesize: 53950
+  channels: 4
+  format: MOD
+  length: '0:55'
+  amp: 159588
 ---
 
 "Psyko Infarnation" was the third tracker module I produced with Amiga

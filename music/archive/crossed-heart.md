@@ -1,7 +1,13 @@
 ---
 title: Crossed Heart
 created: 1996-01-23
-youtube: hQ1v_RDo0vU
+media:
+  youtube: hQ1v_RDo0vU
+  channels: 2
+  filesize: 9112
+  format: MOD
+  length: 0:32 (looped)
+  amp: 159584
 ---
 
 After [Tiny Chip's Revenge][chip01], I was on a [chip] production spree and made

@@ -1,7 +1,13 @@
 ---
 title: Bebob Renaissance
 created: 1995-10-14
-youtube: wRvK1L1ghUk
+media:
+  youtube: wRvK1L1ghUk
+  filesize: 61400
+  format: MOD
+  channels: 4
+  length: '1:35'
+  amp: 159579
 ---
 
 "Bebob Renaissance" was the very first tracker module I produced with Amiga

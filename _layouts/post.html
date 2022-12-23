@@ -4,15 +4,58 @@ layout: default
 
 <h2>{{ page.title }}</h2>
 
-{% if page.youtube %}
-  <div id="youtube">
-    <iframe
-      type="text/html"
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/{{ page.youtube }}"
-      frameborder="0"
-      allowfullscreen></iframe>
+{% if page.media %}
+  <div class="media">
+    <aside>
+      <table>
+        <tbody>
+          <tr>
+            <th scope="row">Created</th>
+            <td>{{ page.created }}</td>
+          </tr>
+          {% if page.media.filesize %}
+            <tr>
+              <th scope="row">Filesize</th>
+              <td>{{ page.media.filesize }}</td>
+            </tr>
+          {% endif %}
+          {% if page.media.format %}
+            <tr>
+              <th scope="row">Format</th>
+              <td>{{ page.media.format }}</td>
+            </tr>
+          {% endif %}
+          {% if page.media.channels %}
+            <tr>
+              <th scope="row">Channels</th>
+              <td>{{ page.media.channels }}</td>
+            </tr>
+          {% endif %}
+          {% if page.media.length %}
+            <tr>
+              <th scope="row">Length</th>
+              <td>{{ page.media.length }}</td>
+            </tr>
+          {% endif %}
+        </tbody>
+      </table>
+
+      {% if page.media.amp %}
+        <a class="download" href="http://amp.dascene.net/downmod.php?index={{ page.amp }}">Download</a>
+      {% endif %}
+    </aside>
+
+    {% if page.media.youtube %}
+      <div id="youtube">
+        <iframe
+          type="text/html"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/{{ page.media.youtube }}"
+          frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+    {% endif %}
   </div>
 {% endif %}
 

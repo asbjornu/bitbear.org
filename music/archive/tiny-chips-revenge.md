@@ -1,7 +1,13 @@
 ---
 title: Tiny Chip's Revenge
 created: 1995-12-26
-youtube: Kpp9_uwaSp8
+media:
+  youtube: Kpp9_uwaSp8
+  filesize: 9827
+  channels: 4
+  format: S3M
+  length: 1:25 (looped)
+  amp: 146725
 ---
 
 By late 1995 I was mostly tracking in Scream Tracker 3 and "Tiny Chip's Revenge"
