@@ -1,10 +1,20 @@
 # frozen_string_literal: false
 
+require 'bytesize'
+
 module Jekyll
   # Filters for working with Jekyll::Page objects
-  module PageFilters
+  module LiquidFilters
     def children_of(all_pages, parent)
       all_pages.select { |p| child_of?(p, parent) }
+    end
+
+    def file_size(input)
+      ByteSize.new(input).to_s
+    end
+
+    def thousands_separated(input, separator = '.')
+      input.to_s.gsub(/(\d)(?=(\d\d\d)+(?!\d))/, "\\1#{separator}")
     end
 
     private
@@ -24,4 +34,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_filter(Jekyll::PageFilters)
+Liquid::Template.register_filter Jekyll::LiquidFilters

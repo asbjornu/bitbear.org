@@ -11,12 +11,12 @@ layout: default
         <tbody>
           <tr>
             <th scope="row">Created</th>
-            <td>{{ page.created }}</td>
+            <td class="date" title="{{ page.created }}">{{ page.created | date_to_long_string: 'ordinal', 'US' }}</td>
           </tr>
           {% if page.media.filesize %}
             <tr>
               <th scope="row">Filesize</th>
-              <td>{{ page.media.filesize }}</td>
+              <td class="filesize" title="{{ page.media.filesize | thousands_separated }} bytes">{{ page.media.filesize | file_size }}</td>
             </tr>
           {% endif %}
           {% if page.media.format %}

@@ -9,6 +9,7 @@ group :jekyll_plugins do
 end
 
 group :libs do
+  gem 'bytesize'
   gem 'nokogiri'
 end
 
