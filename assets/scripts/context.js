@@ -36,7 +36,8 @@
                     "givenName": "Asbjørn Ulsberg",
                     "sameAs": [
                         "https://asbjor.nu/",
-                        "https://twitter.com/asbjornu"
+                        "https://twitter.com/asbjornu",
+                        "https://www.last.fm/user/asbjornu"
                     ]
                 },
                 "roleName": [ "producer" ]
