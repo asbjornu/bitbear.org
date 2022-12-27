@@ -23,7 +23,9 @@
             "http://dj.beatport.com/bitbear",
             "https://www.mixcloud.com/bitbearmusic/",
             "https://bitbearmusic.bandcamp.com",
-            "https://urort.p3.no/artist/Bitbear"
+            "https://urort.p3.no/artist/Bitbear",
+            "https://icosahedron.website/@bitbear",
+            "https://mastodon.social/@bitbear"
         ],
         "member": [
             {
@@ -32,7 +34,10 @@
                     "@type": "Person",
                     "name": "Artist",
                     "givenName": "Asbjørn Ulsberg",
-                    "sameAs": "https://asbjor.nu/"
+                    "sameAs": [
+                        "https://asbjor.nu/",
+                        "https://twitter.com/asbjornu"
+                    ]
                 },
                 "roleName": [ "producer" ]
             }
