@@ -11,8 +11,8 @@ pull_request_rules:
       - author~=^dependabot(|-preview)\[bot\]$
       - '#commits-behind=0' # Only merge up to date pull requests
       - check-success=build
-      - check-success=license/cla
-      - check-success=verify
-      - check-success=spec
+      - check-success=test
+      - check-success=htmlproofer
+      - check-success=publish-dry-run
     actions:
       merge:
