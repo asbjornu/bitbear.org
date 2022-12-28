@@ -11,8 +11,9 @@ media:
 ---
 
 Sound-wise, "Chip Fabric" isn't very chippy, but with a file size of less than
-10 kB, it's within the limits of what one would consider a "chip tune" back in
-the day. It's also a very short tune of only 22 seconds, looped.
+10 kB, it's within the limits of what one would consider a "chip tune" back when
+I produced this as a 15-year old in January 1996. It's also a very short tune of
+only 22 seconds, looped.
 
 I remember being quite proud of this one, and the blurb I wrote in the sample
 text is proof of my over-the-top confidence:
