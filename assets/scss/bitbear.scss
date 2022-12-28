@@ -98,6 +98,7 @@ header {
                 text-align: right;
                 padding: 1rem 0 1rem 1rem;
                 display: block;
+                white-space: nowrap;
 
                 &:after {
                     content: "\203a";
@@ -326,18 +327,49 @@ footer {
                 background-image: url('/assets/images/bitbear-head.png');
                 background-size: 60px 49px;
             }
+
+            ul {
+                font-size: 1rem;
+
+                li {
+                    padding: 1rem 0 1rem .3rem;
+                }
+            }
         }
     }
 
     main {
         padding: 0 2rem;
         top: -2rem;
-    }
 
-    .jumbotron {
-        font-size: 1.5rem;
-        padding: 0;
-        background-color: inherit;
+        .jumbotron {
+            font-size: 1.1rem;
+            padding: 1em;
+            margin: 1em 0;
+        }
+
+        table {
+            th,
+            td {
+                padding: 10px 8px;
+                text-align: left;
+                border-bottom: 1px solid $bg-color-light;
+            }
+
+            .format {
+                display: none;
+            }
+        }
+
+        .media {
+            display: block;
+        }
+
+        #youtube {
+            iframe {
+                max-width: 69vw;
+            }
+        }
     }
 
     footer {

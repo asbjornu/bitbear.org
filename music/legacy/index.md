@@ -13,7 +13,7 @@ Tracker][impulse-tracker].
   <thead>
     <tr>
       <th title="Release date" width="17%" class="r">Released</th>
-      <th>Format</th>
+      <th class="format">Format</th>
       <th>Title</th>
     </tr>
   </thead>
