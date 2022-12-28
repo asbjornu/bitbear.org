@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/music/archive/bebob-renaissance/</loc>
+<loc>/music/legacy/bebob-renaissance/</loc>
 </url>
 <url>
-<loc>/music/archive/chip-fabric/</loc>
+<loc>/music/legacy/chip-fabric/</loc>
 </url>
 <url>
-<loc>/music/archive/cool-interpreter/</loc>
+<loc>/music/legacy/cool-interpreter/</loc>
 </url>
 <url>
-<loc>/music/archive/crossed-heart/</loc>
+<loc>/music/legacy/crossed-heart/</loc>
 </url>
 <url>
-<loc>/music/archive/</loc>
+<loc>/music/legacy/</loc>
 </url>
 <url>
 <loc>/music/</loc>
@@ -22,12 +22,12 @@
 <loc>/</loc>
 </url>
 <url>
-<loc>/music/archive/psyko-infarnation/</loc>
+<loc>/music/legacy/psyko-infarnation/</loc>
 </url>
 <url>
-<loc>/music/archive/the-floot-ride/</loc>
+<loc>/music/legacy/the-floot-ride/</loc>
 </url>
 <url>
-<loc>/music/archive/tiny-chips-revenge/</loc>
+<loc>/music/legacy/tiny-chips-revenge/</loc>
 </url>
 </urlset>
