@@ -16,5 +16,5 @@ a few dozen chip tunes over a few weeks.
 "Crossed Heart" is a two-channel chip tune that isn't much to listen to, but it
 was a fun challenge to only have two of the usual four channels available.
 
-[chip01]: /music/archive/tiny-chips-revenge
+[chip01]: /music/legacy/tiny-chips-revenge
 [chip]: https://en.wikipedia.org/wiki/Chiptune

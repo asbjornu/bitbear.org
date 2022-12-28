@@ -10,7 +10,7 @@ use it any way you like as long as you provide attribution.
 
 You can listen to my music online. My latest tracks are conveniently provided
 below. If you would like to browse through my oldschool legacy, please head over
-to the [archive].
+to the [legacy section][legacy].
 
 {% soundcloud %}
 
@@ -24,7 +24,7 @@ Bitbear can also be found on the following online music platforms:
 - [SoundCloud]{:rel="me"}
 - [YouTube]{:rel="me"}
 
-[archive]: /music/archive/
+[legacy]: /music/legacy/
 [bandcamp]: https://bitbearmusic.bandcamp.com
 [beatport]: https://dj.beatport.com/bitbear
 [cc]: https://creativecommons.org/licenses/by/4.0/
