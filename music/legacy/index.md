@@ -1,10 +1,10 @@
 ---
-title: Music Archive
+title: Bitbear's Legacy Music
 ---
 
 {:.jumbotron}
-Bitbear's oldschool music was produced between 1995 and 2000 as [tracker][]
-[modules][mod] in software such as [ProTracker], [Scream
+Bitbear's oldschool, legacy music was produced between 1995 and 2000 as
+[tracker][] [modules][mod] in software such as [ProTracker], [Scream
 Tracker][scream-tracker], [Fast Tracker II][fast-tracker], and [Impulse
 Tracker][impulse-tracker].
 
