@@ -3,7 +3,6 @@
 [![build][build-badge]][build-link]
 [![codecov][codecov-badge]][codecov]
 [![License][license-badge]][license]
-[![Dependabot Status][dependabot-badge]][dependabot]
 [![Contributor Covenant][coc-badge]][coc]
 
 This repository contains the source of the stuff published to [Bitbear.org].
@@ -16,7 +15,5 @@ This repository contains the source of the stuff published to [Bitbear.org].
 [coc]: ./CODE_OF_CONDUCT.md
 [codecov-badge]: https://codecov.io/gh/asbjornu/bitbear.org/branch/main/graph/badge.svg
 [codecov]: https://codecov.io/gh/asbjornu/bitbear.org
-[dependabot-badge]: https://api.dependabot.com/badges/status?host=github&repo=asbjornu/bitbear.org
-[dependabot]: https://dependabot.com
 [license-badge]: https://img.shields.io/github/license/asbjornu/bitbear.org
 [license]: https://opensource.org/licenses/MIT
