@@ -1,6 +1,6 @@
 markdown: kramdown
 permalink: pretty
-
+url: https://bitbear.org
 plugins:
   - jekyll-sitemap
 
