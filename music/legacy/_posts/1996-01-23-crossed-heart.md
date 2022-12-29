@@ -1,6 +1,5 @@
 ---
 title: Crossed Heart
-created: 1996-01-23
 media:
   youtube: hQ1v_RDo0vU
   channels: 2

@@ -1,6 +1,5 @@
 ---
 title: Tiny Chip's Revenge
-created: 1995-12-26
 media:
   youtube: Kpp9_uwaSp8
   filesize: 9827

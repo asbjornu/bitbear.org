@@ -1,6 +1,5 @@
 ---
 title: Cool Interpreter
-created: 1995-11-18
 media:
   youtube: a7mRZm0wLTQ
   channels: 4

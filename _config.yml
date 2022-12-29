@@ -10,6 +10,10 @@ compress_html:
   comments: all
   startings: [html, head, body]
 
+author:
+  name: Asbjørn Ulsberg
+  email: mail@bitbear.org
+
 defaults:
   - values:
       layout: default

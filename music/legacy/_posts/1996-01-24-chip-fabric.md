@@ -1,6 +1,5 @@
 ---
 title: Chip Fabric
-created: 1996-01-24
 media:
   youtube: hSs0DJxn6Us
   filesize: 9990
