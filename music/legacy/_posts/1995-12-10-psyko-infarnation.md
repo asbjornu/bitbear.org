@@ -1,6 +1,5 @@
 ---
 title: Psyko Infarnation
-created: 1995-12-10
 media:
   youtube: YDvSWJMCyhM
   filesize: 53950

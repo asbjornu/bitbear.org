@@ -1,6 +1,5 @@
 ---
 title: The Floot Ride
-created: 1995-12-14
 media:
   youtube: WfWNZNDsp_w
   filesize: 50288

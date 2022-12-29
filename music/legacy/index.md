@@ -8,7 +8,6 @@ Bitbear's oldschool, legacy music was produced between 1995 and 2000 as
 Tracker][scream-tracker], [Fast Tracker II][fast-tracker], and [Impulse
 Tracker][impulse-tracker].
 
-{% assign children = site.pages | children_of: page | sort: 'created' %}
 <table>
   <thead>
     <tr>
@@ -18,11 +17,13 @@ Tracker][impulse-tracker].
     </tr>
   </thead>
   <tbody>
-  {% for child in children %}
+  {% for post in site.categories['legacy'] %}
     <tr>
-      <td class="r">{{ child.created }}</td>
-      <td class="format">{{ child.media.format }}</td>
-      <td><a href="{{ child.url }}">{{ child.title }}</a></td>
+      <td class="r date" title="{{ post.date | date_to_long_string: 'ordinal', 'US' }}">
+        {{ post.date | date: '%Y-%m-%d' }}
+      </td>
+      <td class="format">{{ post.media.format }}</td>
+      <td><a href="{{ post.url }}">{{ post.title }}</a></td>
     </tr>
   {% endfor %}
   </tbody>

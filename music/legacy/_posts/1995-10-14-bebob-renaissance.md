@@ -1,6 +1,5 @@
 ---
 title: Bebob Renaissance
-created: 1995-10-14
 media:
   youtube: wRvK1L1ghUk
   filesize: 61400
