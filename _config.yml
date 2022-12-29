@@ -3,6 +3,7 @@ permalink: pretty
 url: https://bitbear.org
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
 
 compress_html:
   clippings: all
