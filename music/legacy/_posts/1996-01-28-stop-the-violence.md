@@ -8,9 +8,10 @@ media:
   length: 0:54 (looped)
 ---
 
-In this happy S3M, I used more chip-sounding samples again. Combined with the
-limit of 3 channels (just like on the C64), and sizing in at less than 9 kB, I
-think "Stop The Violence!" properly qualifies as a chip-tune.
+In this happy S3M produced in late January 1996, I used more chip-sounding
+samples again. Combined with the limit of 3 channels (just like on the C64), and
+sizing in at less than 9 kB, I think "Stop The Violence!" properly qualifies as
+a chip-tune.
 
 *[S3M]: Scream Tracker 3 module
 *[9 kB]: 9 kilobytes
