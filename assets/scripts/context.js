@@ -25,7 +25,8 @@
             "https://bitbearmusic.bandcamp.com",
             "https://urort.p3.no/artist/Bitbear",
             "https://icosahedron.website/@bitbear",
-            "https://mastodon.social/@bitbear"
+            "https://mastodon.social/@bitbear",
+            "https://modarchive.org/index.php?request=view_profile&query=84875"
         ],
         "member": [
             {
