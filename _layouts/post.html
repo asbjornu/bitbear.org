@@ -41,9 +41,9 @@ layout: default
       </table>
 
       {% if page.media.modarchive %}
-        <a class="download" href="https://api.modarchive.org/downloads.php?moduleid={{ page.modarchive }}">Download</a>
+        <a class="download" href="https://api.modarchive.org/downloads.php?moduleid={{ page.media.modarchive }}">Download</a>
       {% elsif page.media.amp %}
-        <a class="download" href="https://amp.dascene.net/downmod.php?index={{ page.amp }}">Download</a>
+        <a class="download" href="https://amp.dascene.net/downmod.php?index={{ page.media.amp }}">Download</a>
       {% endif %}
     </aside>
 
