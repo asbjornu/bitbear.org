@@ -42,6 +42,8 @@ layout: default
 
       {% if page.media.amp %}
         <a class="download" href="https://amp.dascene.net/downmod.php?index={{ page.amp }}">Download</a>
+      {% elseif page.media.modarchive %}
+        <a class="download" href="https://api.modarchive.org/downloads.php?moduleid={{ page.modarchive }}">Download</a>
       {% endif %}
     </aside>
 
