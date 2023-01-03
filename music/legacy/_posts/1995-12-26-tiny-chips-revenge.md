@@ -6,6 +6,7 @@ media:
   channels: 4
   format: S3M
   length: 1:25 (looped)
+  modarchive: 199554
   amp: 146725
 ---
 

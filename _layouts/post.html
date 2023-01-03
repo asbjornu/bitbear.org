@@ -40,10 +40,10 @@ layout: default
         </tbody>
       </table>
 
-      {% if page.media.amp %}
-        <a class="download" href="https://amp.dascene.net/downmod.php?index={{ page.amp }}">Download</a>
-      {% elseif page.media.modarchive %}
+      {% if page.media.modarchive %}
         <a class="download" href="https://api.modarchive.org/downloads.php?moduleid={{ page.modarchive }}">Download</a>
+      {% elsif page.media.amp %}
+        <a class="download" href="https://amp.dascene.net/downmod.php?index={{ page.amp }}">Download</a>
       {% endif %}
     </aside>
 
