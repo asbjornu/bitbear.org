@@ -26,7 +26,7 @@ Years:
   {% assign current_year = post.date | date: '%Y' %}
   {% if prev_year != current_year %}
     {% if prev_year != nil %}</tbody></table>{% endif %}
-<h3 id="{{ current_year }}"><a href="{{ current_year }}">{{ current_year }}</a></h3>
+<h3 id="{{ current_year }}"><a href="#{{ current_year }}">{{ current_year }}</a></h3>
 <table><thead><tr><th title="Release date" width="17%" class="r">Released</th>
       <th class="format">Format</th>
       <th>Title</th>
