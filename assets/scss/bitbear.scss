@@ -186,6 +186,27 @@ main {
         font-size: 3rem;
     }
 
+    nav.years {
+        font-weight: bold;
+        font-size: 1.8rem;
+
+        ol {
+            &, li {
+                display: inline;
+            }
+
+            li {
+                &:after {
+                    content: ', '
+                }
+
+                &:last-child:after {
+                    content: '';
+                }
+            }
+        }
+    }
+
     table {
         width: 100%;
         border-collapse: collapse;

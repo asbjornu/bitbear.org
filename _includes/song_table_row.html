@@ -1,0 +1,7 @@
+<tr>
+  <td class="r date" title="{{ post.date | date_to_long_string: 'ordinal', 'US' }}">
+    {{ post.date | date: '%Y-%m-%d' }}
+  </td>
+  <td class="format">{{ post.media.format }}</td>
+  <td><a href="{{ post.url }}">{{ post.title }}</a></td>
+</tr>
