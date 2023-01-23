@@ -10,6 +10,9 @@ media:
   amp: 159591
 ---
 
-"The Floote Ride" was the fourth tracker module I produced, and the first one I
-feel somewhat content with. Also produced as a 15 year old, on December 14th,
-1995.
+"The Floote Ride" was one of the the first tracker modules I felt somewhat
+content with, both back then, and now. It is also the first module (at least
+that I can find) published under the name PoC, as a 15 year old, on December
+14th, 1995.
+
+*[PoC]: Power of Creation
