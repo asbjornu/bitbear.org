@@ -22,6 +22,8 @@ GEM
     http_parser.rb (0.8.0)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
+    its (0.2.0)
+      rspec-core
     jekyll (4.3.2)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -137,6 +139,7 @@ PLATFORMS
 DEPENDENCIES
   bytesize
   codecov
+  its
   jekyll
   jekyll-feed
   jekyll-sitemap

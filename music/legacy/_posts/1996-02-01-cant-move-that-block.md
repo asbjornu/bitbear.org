@@ -10,5 +10,5 @@ media:
   amp: 159581
 ---
 
-This unconventional 3-channel chiptune was created with Scream Tracker 3 in
-February 1996. Shared and published, not for pride, but for brevity.
+This unconventional 3-channel chiptune was created with Scream Tracker 3 on
+{% date %}. Shared and published, not for pride, but for brevity.

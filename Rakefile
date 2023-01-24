@@ -32,4 +32,4 @@ task :clean do
   Jekyll::Commands::Clean.process({})
 end
 
-task default: ['build']
+task default: ['spec']
