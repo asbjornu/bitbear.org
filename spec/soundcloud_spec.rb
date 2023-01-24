@@ -2,7 +2,7 @@
 
 require_relative '../_plugins/soundcloud'
 
-describe Jekyll::SoundCloud do
+describe Jekyll::SoundCloudTag do
   include_context 'shared'
   music_index = File.join(@dest_dir, 'music', 'index.html')
 
