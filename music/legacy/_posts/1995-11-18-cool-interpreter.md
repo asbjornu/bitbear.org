@@ -10,7 +10,7 @@ media:
   amp: 159583
 ---
 
-"Cool Interpreter" was one of the first tracker modules I produced as a coop
-with my friend [Fulgore], back when we both were 15 years old, in November 1995.
+"Cool Interpreter" was probably the fourth tracker modules I produced, as a coop
+with my friend [Fulgore], back when we both were 15 years old, on {% date %}.
 
 [fulgore]: https://demozoo.org/sceners/106369/
