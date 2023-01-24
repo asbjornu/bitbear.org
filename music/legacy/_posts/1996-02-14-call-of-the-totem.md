@@ -1,5 +1,6 @@
 ---
 title: Call of the Totem
+tag: chip
 media:
   youtube: J0H2jB3c3ck
   filesize: 7746

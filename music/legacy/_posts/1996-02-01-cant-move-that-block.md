@@ -1,5 +1,6 @@
 ---
 title: Can't Move That Block
+tag: chip
 media:
   youtube: DLzDOGB5iqk
   filesize: 8088
@@ -10,5 +11,7 @@ media:
   amp: 159581
 ---
 
-This unconventional 3-channel chiptune was created with Scream Tracker 3 on
+This unconventional 3-channel [chiptune] was created with Scream Tracker 3 on
 {% date %}. Shared and published, not for pride, but for brevity.
+
+[chiptune]: /music/chiptunes
