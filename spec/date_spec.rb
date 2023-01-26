@@ -7,6 +7,22 @@ require_relative '../_plugins/date'
 describe Jekyll::DateTag do
   subject(:date) { described_class.parse('date', input, nil, Liquid::ParseContext.new) }
 
+  context 'with format' do
+    let(:input) { "format: '%B %Y'" }
+    its(:raw) { is_expected.to eq("date format: '%B %Y'") }
+    its(:render, Liquid::Context.new({ 'page' => { 'date' => '2020-08-23' } })) {
+      is_expected.to eq('<abbr title="2020-08-23">August 2020</abbr>')
+    }
+  end
+
+  context 'with format and date' do
+    let(:input) { "'2018-01-01', format: '%B %Y'" }
+    its(:raw) { is_expected.to eq("date '2018-01-01', format: '%B %Y'") }
+    its(:render, Liquid::Context.new({ 'page' => { 'date' => '2020-08-23' } })) {
+      is_expected.to eq('<abbr title="2018-01-01">January 2018</abbr>')
+    }
+  end
+
   context 'valid dates' do
     let(:input) { '2018-01-01' }
     its(:raw) { is_expected.to eq('date 2018-01-01') }

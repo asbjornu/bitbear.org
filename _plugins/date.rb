@@ -6,6 +6,7 @@ module Jekyll
     def initialize(tag_name, input, _)
       super
 
+      (@format, input) = format(input)
       @date = to_date(input)
     end
 
@@ -17,13 +18,31 @@ module Jekyll
       return '' if date.nil?
 
       ordinal = ordinal(date.day)
+      format = @format || default_format(ordinal)
       iso8601_date = date.strftime('%F')
-      readable_date = date.strftime("%A, %B #{ordinal} %Y")
+      readable_date = date.strftime(format)
 
       "<abbr title=\"#{iso8601_date}\">#{readable_date}</abbr>"
     end
 
     private
+
+    def default_format(ordinal)
+      "%A, %B #{ordinal} %Y"
+    end
+
+    def format(input)
+      return [nil, input] if input.nil? || !input.is_a?(String) || input.empty?
+
+      match = input.match(/format:\s*['"](.*)['"]/)
+
+      return [nil, input] if match.nil?
+
+      format = match[1]
+      input = input.gsub(match[0], '').strip
+
+      [format, input]
+    end
 
     def ordinal(day)
       day.to_s +
