@@ -163,6 +163,7 @@ main {
 
     nav.iterator {
         clear: both;
+        margin-top: 1em;
 
         ol {
             margin: 0;
@@ -176,38 +177,38 @@ main {
 
                 a {
                     position: relative;
-                }
 
-                &:first-child a {
-                    margin-right: 1em;
+                    &[rel*="prev"] {
+                        margin-right: 1em;
 
-                    &:before {
-                        display: inline-block;
-                        margin: 0 .5rem 0 0;
-                        content: "\2039";
+                        &:before {
+                            display: inline-block;
+                            margin: 0 .5rem 0 0;
+                            content: "\2039";
+                        }
                     }
-                }
 
-                &:nth-child(2) a {
-                    margin: 0 1em;
+                    &[rel*="back"] {
+                        margin: 0 1em 0 0;
 
-                    &:before {
-                        display: inline-block;
-                        position: relative;
-                        margin-right: .5rem;
-                        bottom: -.25rem;
-                        content: "\21A9";
+                        &:before {
+                            display: inline-block;
+                            position: relative;
+                            margin-right: .5rem;
+                            bottom: -.25rem;
+                            content: "\21A9";
+                        }
                     }
-                }
 
-                &:last-child a {
-                    margin-left: 1em;
-
-                    &:after {
+                    &[rel*="next"]:after {
                         display: inline-block;
                         margin: 0 0 0 .5rem;
                         content: "\203A";
                     }
+                }
+
+                &:last-child a {
+                    margin-right: 0;
                 }
             }
         }
