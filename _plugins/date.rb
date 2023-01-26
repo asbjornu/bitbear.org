@@ -40,8 +40,8 @@ module Jekyll
     end
 
     def to_date(date)
-      if date.nil?
-        Jekyll.logger.debug 'DateTag:', 'Date is nil.'
+      if date.nil? || (date.respond_to?(:empty?) && date.empty?)
+        Jekyll.logger.debug 'DateTag:', 'Date is nil or empty.'
         return nil
       end
 
@@ -53,8 +53,8 @@ module Jekyll
       Jekyll.logger.debug 'DateTag:', "Parsing date: #{date}."
 
       Date.parse(date)
-    rescue StandardError
-      Jekyll.logger.warn 'DateTag:', "Invalid date: #{date}."
+    rescue StandardError => e
+      Jekyll.logger.warn 'DateTag:', "Invalid date: #{date}. #{e}"
       nil
     end
 
