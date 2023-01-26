@@ -14,6 +14,8 @@ I have no idea when I actually produced "First Techno Attempt" as the date on
 the file says {% date '1997-12-02' %}, which must be wrong as by then I had
 produced a lot of songs that I would have considered to be "techno".
 
+<!--more-->
+
 I believe I started and almost completed this late in 1995 and finally finished
 it some time in 1996, where all I did was add the choir intro. That explains
 signing the song as PoC in the song's instrument list, because while I created

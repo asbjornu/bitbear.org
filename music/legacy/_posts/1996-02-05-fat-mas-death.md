@@ -12,8 +12,8 @@ media:
 ---
 
 This horribly named [chiptune] produced in early February 1996 was my first
-attempt at creating something more mellow and harmonic. As noted in the song's
-sample text:
+attempt at creating something more mellow and harmonic. <!--more--> As noted in
+the song's sample text:
 
 > PoC created this sorrow-filled song. I'm not good in making names for my
 > songs, so "Fat Ma's Death" was only thing I could come up with!

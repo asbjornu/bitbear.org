@@ -1,6 +1,10 @@
 ---
 title: Bitbear's Chiptunes
 layout: page
+description: |
+    Chiptunes are songs which mimic the sound of physical hardware chips such as
+    Commodore 64's SID or ZX Spectrum's AY-3-8910. Here you can find Bitbear's
+    chiptunes.
 ---
 
 {:.jumbotron}

@@ -11,9 +11,9 @@ media:
 ---
 
 This wall of utter noise was produced {% date %}, and is just published for
-brevity's sake. I would have preferred not to have made this trash at all, but I
-wasn't able to hear that and make the appropriate decision to delete it as a 15
-year old kid.
+brevity's sake. <!--more--> I would have preferred not to have made this trash
+at all, but I wasn't able to hear that and make the appropriate decision to
+delete it as a 15 year old kid.
 
 Now that it's been with me for so many years, I don't have it in me to delete
 it. So here it is.

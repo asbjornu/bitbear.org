@@ -13,4 +13,6 @@ media:
 "Psyko Infarnation" was the third tracker module I produced with Amiga
 ProTracker as a 15 year old on {% date %}.
 
+<!--more-->
+
 I think I got the samples from a Pinball Fantasies module, but I'm not sure.

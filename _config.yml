@@ -1,5 +1,6 @@
 markdown: kramdown
 permalink: /:categories/:title
+excerpt_separator: <!--more-->
 url: https://bitbear.org
 plugins:
   - jekyll-sitemap

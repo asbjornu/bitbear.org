@@ -14,6 +14,8 @@ media:
 By late 1995 I was mostly tracking in Scream Tracker 3 and this was my first
 [chiptune] produced as an S3M.
 
+<!--more-->
+
 "Tiny Chip's Revenge" was produced during Christmas of 1995 for a diskmag called
 "Ultramag #1", but I have no idea what happened to it, who was going to make it,
 or whether it was ever made.

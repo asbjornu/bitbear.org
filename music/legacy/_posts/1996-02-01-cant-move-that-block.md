@@ -14,4 +14,6 @@ media:
 This unconventional 3-channel [chiptune] was created with Scream Tracker 3 on
 {% date %}. Shared and published, not for pride, but for brevity.
 
+<!--more-->
+
 [chiptune]: /music/chiptunes

@@ -10,7 +10,8 @@ media:
 ---
 
 While being neither jazz, nor a symphony, I'm quite content with some parts of
-"Slow Jazz Symphony". Except the bridge part, of course, which is horrible.
+"Slow Jazz Symphony". <!--more--> Except the bridge part, of course, which is
+horrible.
 
 It took me quite a while to figure out exactly how to properly structure songs
 and ensure that each part served a purpose. As the untrained 15 year old

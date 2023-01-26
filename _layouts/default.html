@@ -1,5 +1,8 @@
-{%- assign title = page.title | default: site.data.settings.title | strip -%}
-{%- assign description = page.description | default: site.data.settings.description | strip -%}
+{%- capture title -%}
+  {%- unless page.title contains 'Bitbear' -%}Bitbear – {% endunless -%}
+  {{ page.title | default: site.data.settings.title | strip -}}
+{%- endcapture -%}
+{%- assign description = page.excerpt | default: page.description | default: site.data.settings.description | strip_html | newline_to_br | strip_newlines | split: '<br />' | join: ' ' | strip -%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,18 +20,9 @@
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
     <link rel="alternate" type="application/atom+xml" title="Atom feed" href="/feed.xml">
     <link rel="stylesheet" href="{{ '/assets/scss/bitbear.css' | relative_url }}">
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="{{ '/assets/images/favicon.png' | relative_url }}">
-    <link
-      rel="shortcut icon"
-      type="image/svg"
-      href="{{ '/assets/images/logo.svg' | relative_url }}">
-    <link
-      rel="icon"
-      type="image/svg"
-      href="{{ '/assets/images/logo.svg' | relative_url }}">
+    <link rel="shortcut icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
+    <link rel="shortcut icon" type="image/svg" href="{{ '/assets/images/logo.svg' | relative_url }}">
+    <link rel="icon" type="image/svg" href="{{ '/assets/images/logo.svg' | relative_url }}">
     <script src="{{ '/assets/scripts/context.js' | relative_url }}"></script>
   </head>
   <body>

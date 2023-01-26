@@ -1,5 +1,8 @@
 ---
 title: Music
+description: |
+    Bitbear's music is licensed under the CC BY 4.0 license, meaning you can use
+    it any way you like as long as you provide attribution.
 ---
 
 {:.jumbotron}

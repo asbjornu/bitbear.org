@@ -1,5 +1,9 @@
 ---
 title: Bitbear's Legacy Music
+description: |
+    Bitbear's oldschool, legacy music was produced between 1995 and 2000 as
+    tracker modules in software such as ProTracker, Scream Tracker, Fast Tracker
+    II, and Impulse Tracker.
 ---
 
 {:.jumbotron}

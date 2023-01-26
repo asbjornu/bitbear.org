@@ -9,9 +9,9 @@ media:
   modarchive: 199726
 ---
 
-This horrible song is shamefully published for brevity and nothing else. I had
-forgotten that it even existed until I unearthed it among my old music archive
-on {% date '2023-01-23' %}.
+This horrible song is shamefully published for brevity and nothing else. <!--more-->
+I had forgotten that the song even existed until I unearthed it among my old
+music archive on {% date '2023-01-23' %}.
 
 I'm not exactly sure when "Mortal Silence" was made, so the date is a guess, but
 judging from its extremely poor quality and the fact that I was still calling

@@ -14,6 +14,8 @@ media:
 After [Tiny Chip's Revenge][chip01], I was on a [chip] production spree and made
 a few dozen chip tunes over a few weeks.
 
+<!--more-->
+
 "Crossed Heart" is a two-channel chip tune that isn't much to listen to, but it
 was a fun challenge to only have two of the usual four channels available.
 

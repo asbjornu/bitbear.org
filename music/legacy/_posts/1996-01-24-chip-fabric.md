@@ -16,6 +16,8 @@ Sound-wise, "Chip Fabric" isn't very chippy, but with a file size of less than
 I produced this as a 15-year old in January 1996. It's also a very short tune of
 only 22 seconds, looped.
 
+<!--more-->
+
 I remember being quite proud of this one, and the blurb I wrote in the sample
 text is proof of my over-the-top confidence:
 

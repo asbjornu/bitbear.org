@@ -11,9 +11,11 @@ media:
   amp: 159586
 ---
 
-My first attempt at a cover song was of [Europe]'s epic song [The Final
+My first attempt at a cover song was of [Europe][europe]'s epic song [The Final
 Countdown][final-countdown], which since I first heard it in 1986, thought had
 one of the best synth lead melodies ever written.
+
+<!--more-->
 
 Produced as a 4-channel [chiptune], I remember struggling with both the chords
 and timing. It didn't end up as a perfect chip rendition of the original, but
