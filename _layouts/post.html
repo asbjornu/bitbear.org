@@ -41,9 +41,9 @@ layout: default
       </table>
 
       {% if page.media.modarchive %}
-        <a class="download" href="https://api.modarchive.org/downloads.php?moduleid={{ page.media.modarchive }}">Download</a>
+        <a class="btn download" href="https://api.modarchive.org/downloads.php?moduleid={{ page.media.modarchive }}">Download</a>
       {% elsif page.media.amp %}
-        <a class="download" href="https://amp.dascene.net/downmod.php?index={{ page.media.amp }}">Download</a>
+        <a class="btn download" href="https://amp.dascene.net/downmod.php?index={{ page.media.amp }}">Download</a>
       {% endif %}
     </aside>
 
@@ -63,23 +63,4 @@ layout: default
 
 {{ content }}
 
-{%- assign url = page.url | remove: '.html' | split: '/' -%}
-{%- assign path = url | pop -%}
-<nav class="back">
-  <ul>
-    {%- if path.size == 1 -%}
-      <li>
-        <a rel="index back" href="/">Home</a>
-      </li>
-    {%- else -%}
-      {%- capture link %}
-        {%- for dir in path offset: 1 -%}
-          {{- dir | append: '/' -}}
-        {%- endfor -%}
-      {%- endcapture -%}
-      <li>
-        <a rel="back" href="/{{ link }}">Back to {{ path | last }}</a>
-      </li>
-    {%- endif -%}
-  </ul>
-</nav>
+{% include iterator.html %}

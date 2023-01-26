@@ -161,18 +161,53 @@ main {
         margin-left: 1em;
     }
 
-    nav.back {
+    nav.iterator {
         clear: both;
 
-        ul {
-            margin: 1em 0 0 0;
+        ol {
+            margin: 0;
+            display: flex;
 
             li {
-                list-style-type: "\2039";
+                flex: 1;
                 margin: 0;
+                display: inline-block;
+                list-style-type: none;
 
                 a {
-                    margin-left: .5em;
+                    position: relative;
+                }
+
+                &:first-child a {
+                    margin-right: 1em;
+
+                    &:before {
+                        display: inline-block;
+                        margin: 0 .5rem 0 0;
+                        content: "\2039";
+                    }
+                }
+
+                &:nth-child(2) a {
+                    margin: 0 1em;
+
+                    &:before {
+                        display: inline-block;
+                        position: relative;
+                        margin-right: .5rem;
+                        bottom: -.25rem;
+                        content: "\21A9";
+                    }
+                }
+
+                &:last-child a {
+                    margin-left: 1em;
+
+                    &:after {
+                        display: inline-block;
+                        margin: 0 0 0 .5rem;
+                        content: "\203A";
+                    }
                 }
             }
         }
@@ -261,21 +296,24 @@ main {
             }
 
             .download {
-                background-color: rgba($bg-color-light, .6);
-                box-shadow: inset 2px 2px 0 2px rgba(#fff, 0.02);
-                border: 1px solid $bg-color-light;
-                border-radius: 10px;
-                display: block;
                 margin: 1em;
-                padding: 1em;
-                text-align: center;
-                text-decoration: none;
             }
+        }
+    }
 
-            .download:hover {
-                background-color: rgba($bg-color-light, .4);
-                box-shadow: inset 0px 5px 10px 0px rgba(#000, 0.5);
-            }
+    .btn {
+        background-color: rgba($bg-color-light, .6);
+        box-shadow: inset 2px 2px 0 2px rgba(#fff, 0.02);
+        border: 1px solid $bg-color-light;
+        border-radius: 10px;
+        display: block;
+        padding: 1em;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+            background-color: rgba($bg-color-light, .4);
+            box-shadow: inset 0px 5px 10px 0px rgba(#000, 0.5);
         }
     }
 
