@@ -12,6 +12,7 @@ media:
 
 I'm not ashamed of this one as I am of a few other of my songs, but I also
 consider this published mostly for brevity since it's one of the first tracker
-modules I ever made, as a 15-year old some time in November 1995.
+modules I ever made, as a 15-year old sometime during
+{% date format: '%B %Y' %}.
 
 <!--more-->

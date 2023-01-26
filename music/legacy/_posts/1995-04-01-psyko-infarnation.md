@@ -10,8 +10,8 @@ media:
   amp: 159588
 ---
 
-"Psyko Infarnation" was the third tracker module I produced with Amiga
-ProTracker as a 15 year old on {% date %}.
+"Psyko Infarnation" was the fourth tracker module I produced with Amiga
+ProTracker as a 14 year old sometime during {% date format: '%B %Y' %}.
 
 <!--more-->
 

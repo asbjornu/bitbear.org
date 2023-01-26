@@ -10,9 +10,9 @@ media:
   amp: 159583
 ---
 
-"Cool Interpreter" was probably the fourth tracker modules I produced, as a coop
-with my friend [Fulgore][fulgore], back when we both were 15 years old, on {%
-date %}.
+"Cool Interpreter" was probably the second tracker modules I produced, as a coop
+with my friend [Fulgore][fulgore], back when we both were 14 years old, sometime
+during {% date format: '%B %Y' %}.
 
 <!--more-->
 

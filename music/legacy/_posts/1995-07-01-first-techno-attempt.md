@@ -16,13 +16,14 @@ produced a lot of songs that I would have considered to be "techno".
 
 <!--more-->
 
-I believe I started and almost completed this late in 1995 and finally finished
+I believe I started and mostly completed this late in 1995 and finally finished
 it some time in 1996, where all I did was add the choir intro. That explains
 signing the song as PoC in the song's instrument list, because while I created
 this song originally, I still went by the handle "PCi".
 
 To best fit with the chronology and development of my music abilities, I
-therefore date "First Techno Attempt" to {% date %}.
+therefore date "First Techno Attempt" to {% date %} although that isn't exactly
+correct.
 
 Regarding the song's title, please don't mind that the song isn't in the
 "techno" genre by any stretch of the imagination. To me and most of my friends
