@@ -13,14 +13,14 @@ module Jekyll
     def render(context)
       date = @date || to_date(lookup(context, 'page.date'))
 
-      Jekyll.logger.debug 'DateTag:', "Rendering date: #{date}."
-
       return '' if date.nil?
 
       ordinal = ordinal(date.day)
       format = @format || default_format(ordinal)
       iso8601_date = date.strftime('%F')
       readable_date = date.strftime(format)
+
+      Jekyll.logger.debug 'DateTag:', "Rendering date '#{date}' with format '#{format}'."
 
       "<abbr title=\"#{iso8601_date}\">#{readable_date}</abbr>"
     end
