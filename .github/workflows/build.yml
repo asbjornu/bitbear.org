@@ -10,8 +10,8 @@ jobs:
 
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7
-          rubygems: 3.3.22
+          ruby-version: 3
+          rubygems: 3.4.10
           bundler-cache: true
 
       - name: jekyll build
@@ -46,8 +46,8 @@ jobs:
 
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7
-          rubygems: 3.3.22
+          ruby-version: 3
+          rubygems: 3.4.10
           bundler-cache: true
 
       - name: rspec
