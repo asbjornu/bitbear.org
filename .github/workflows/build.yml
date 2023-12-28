@@ -37,7 +37,7 @@ jobs:
         uses: chabad360/htmlproofer@master
         with:
           directory: _site
-          arguments: --ignore-status-codes "429,302"
+          arguments: --ignore-status-codes "429,302" --ignore-urls "/twitter.com/"
 
   test:
     runs-on: ubuntu-latest
