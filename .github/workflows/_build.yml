@@ -1,0 +1,25 @@
+name: build
+
+on:
+  workflow_call:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2
+          rubygems: 3.4.10
+          bundler-cache: true
+
+      - name: jekyll build
+        run: bundle exec rake build
+
+      - name: upload site
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: _site

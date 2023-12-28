@@ -1,40 +1,21 @@
-name: build
+name: test
 
 on: [push, pull_request]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 3.2
-          rubygems: 3.4.10
-          bundler-cache: true
-
-      - name: jekyll build
-        run: bundle exec rake build
-
-      - name: upload site
-        uses: actions/upload-artifact@v4
-        with:
-          name: site
-          path: _site
+    uses: ./.github/workflows/_build.yml
 
   htmlproofer:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: download site
-        uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v4
         with:
           name: site
           path: _site
 
-      - name: htmlproofer
-        uses: chabad360/htmlproofer@v2
+      - uses: chabad360/htmlproofer@v2
         with:
           directory: _site
           arguments: --ignore-status-codes "429,302" --ignore-urls "/twitter.com/"
@@ -63,8 +44,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: download site
-        uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v4
         with:
           name: site
           path: _site
