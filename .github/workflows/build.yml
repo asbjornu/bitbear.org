@@ -10,7 +10,7 @@ jobs:
 
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3
+          ruby-version: 3.2
           rubygems: 3.4.10
           bundler-cache: true
 
@@ -37,7 +37,7 @@ jobs:
         uses: chabad360/htmlproofer@master
         with:
           directory: _site
-          arguments: --ignore-status-codes "429,302"
+          arguments: --ignore-status-codes "429,302" --ignore-urls "/twitter.com/"
 
   test:
     runs-on: ubuntu-latest
@@ -46,7 +46,7 @@ jobs:
 
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3
+          ruby-version: 3.2
           rubygems: 3.4.10
           bundler-cache: true
 
