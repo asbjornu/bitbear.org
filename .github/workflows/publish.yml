@@ -9,29 +9,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.2
           rubygems: 3.4.10
           bundler-cache: true
 
-      - name: jekyll build
-        run: bundle exec rake build
+      - run: bundle exec rake build
 
-      - name: upload site
-        uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: site
           path: _site
 
-      - name: download git directory deploy
-        env:
-          VERSION: 1.1.0
-        run: |
-          wget "https://github.com/SwedbankPay/git-directory-deploy/raw/${VERSION}/deploy.sh"
-          chmod +x deploy.sh
+      - uses: actions/configure-pages@v4
 
-      - name: publish
-        env:
-          GIT_DEPLOY_DIR: _site
-        run: ./deploy.sh
+      - uses: actions/upload-pages-artifact@v2
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v3

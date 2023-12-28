@@ -18,7 +18,7 @@ jobs:
         run: bundle exec rake build
 
       - name: upload site
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: site
           path: _site
@@ -28,13 +28,13 @@ jobs:
     needs: build
     steps:
       - name: download site
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: site
           path: _site
 
       - name: htmlproofer
-        uses: chabad360/htmlproofer@master
+        uses: chabad360/htmlproofer@v2
         with:
           directory: _site
           arguments: --ignore-status-codes "429,302" --ignore-urls "/twitter.com/"
@@ -59,24 +59,12 @@ jobs:
       - name: rubocop
         run: bundle exec rubocop --fail-level warning --display-only-fail-level-offenses
 
-  publish-dry-run:
+  download-site:
     runs-on: ubuntu-latest
     needs: build
     steps:
       - name: download site
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: site
           path: _site
-
-      - name: download git directory deploy
-        env:
-          VERSION: 1.1.0
-        run: |
-          wget "https://github.com/SwedbankPay/git-directory-deploy/raw/${VERSION}/deploy.sh"
-          chmod +x deploy.sh
-
-      - name: publish
-        env:
-          GIT_DEPLOY_DIR: _site
-        run: ./deploy.sh --verbose --dry-run
